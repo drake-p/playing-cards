@@ -1,0 +1,114 @@
+ .cardstack, .hand {
+  position: relative;
+  height: 9.6em;
+}
+
+.card {
+  height: 8.85em;
+  width: 6.4em;
+  background: #fff url('card-set.png') no-repeat;
+  background-size: 1300% 400%;
+  border: 1px solid #695d39;
+  -webkit-border-radius:  .5em;
+  -moz-border-radius:     .5em;
+  border-radius:          .5em;
+  -webkit-box-shadow:   0 0 .5em -.15em #000;
+  -moz-box-shadow:      0 0 .5em -.15em #000;
+  box-shadow:           0 0 .5em -.15em #000;
+  font-family: 'Times', serif;
+  text-align: left;
+  line-height: 1em;
+  padding-top: .25em;
+  padding-left: .1em;
+  letter-spacing: -.2em;
+  position: absolute;
+}
+
+/* SUITS */
+.C { background-position-y: 0;       color: #000; }
+.D { background-position-y: -9.1em; color: #890000; }
+.S { background-position-y: -18.2em; color: #000; }
+.H { background-position-y: -27.3em;    color: #890000; }
+
+/* RANKS */
+.rankA  { background-position-x: 0; }
+.rank2  { background-position-x: -6.5em; }
+.rank3  { background-position-x: -13em; }
+.rank4  { background-position-x: -19.5em; }
+.rank5  { background-position-x: -26em; }
+.rank6  { background-position-x: -32.5em; }
+.rank7  { background-position-x: -39em; }
+.rank8  { background-position-x: -45.5em; }
+.rank9  { background-position-x: -52em; }
+.rank10 { background-position-x: -58.5em;}
+.rankJ  { background-position-x: -65em; }
+.rankQ  { background-position-x: -71.5em; }
+.rankK  { background-position-x: -78em; }
+
+/* Lay cards out edge-to-edge */
+.card:nth-of-type(1) { left: 0; }
+.card:nth-of-type(2) { left: 7em; }
+.card:nth-of-type(3) { left: 14em; }
+.card:nth-of-type(4) { left: 21em; }
+.card:nth-of-type(5) { left: 28em; }
+
+/* Lay cards out in a stacked hand showing indices */
+.hand .card:nth-of-type(1) { left: 0; }
+.hand .card:nth-of-type(2) { left: 1em; }
+.hand .card:nth-of-type(3) { left: 2em; }
+.hand .card:nth-of-type(4) { left: 3em; }
+.hand .card:nth-of-type(5) { left: 4em; }
+
+/* For FF compatibility, the combined rank-suit classes */
+.rankAC {color: #000; background-position: 0 0; }
+.rankAD {color: #890000; background-position: 0 -9.1em; }
+.rankAS {color: #000; background-position: 0 -18.2em; }
+.rankAH {color: #890000; background-position: 0 -27.3em; }
+.rank2C {color: #000; background-position: -6.5em 0; }
+.rank2D {color: #890000; background-position: -6.5em -9.1em; }
+.rank2S {color: #000; background-position: -6.5em -18.2em; }
+.rank2H {color: #890000; background-position: -6.5em -27.3em; }
+.rank3C {color: #000; background-position: -13em 0; }
+.rank3D {color: #890000; background-position: -13em -9.1em; }
+.rank3S {color: #000; background-position: -13em -18.2em; }
+.rank3H {color: #890000; background-position: -13em -27.3em; }
+.rank4C {color: #000; background-position: -19.5em 0; }
+.rank4D {color: #890000; background-position: -19.5em -9.1em; }
+.rank4S {color: #000; background-position: -19.5em -18.2em; }
+.rank4H {color: #890000; background-position: -19.5em -27.3em; }
+.rank5C {color: #000; background-position: -26em 0; }
+.rank5D {color: #890000; background-position: -26em -9.1em; }
+.rank5S {color: #000; background-position: -26em -18.2em; }
+.rank5H {color: #890000; background-position: -26em -27.3em; }
+.rank6C {color: #000; background-position: -32.5em 0; }
+.rank6D {color: #890000; background-position: -32.5em -9.1em; }
+.rank6S {color: #000; background-position: -32.5em -18.2em; }
+.rank6H {color: #890000; background-position: -32.5em -27.3em; }
+.rank7C {color: #000; background-position: -39em 0; }
+.rank7D {color: #890000; background-position: -39em -9.1em; }
+.rank7S {color: #000; background-position: -39em -18.2em; }
+.rank7H {color: #890000; background-position: -39em -27.3em; }
+.rank8C {color: #000; background-position: -45.5em 0; }
+.rank8D {color: #890000; background-position: -45.5em -9.1em; }
+.rank8S {color: #000; background-position: -45.5em -18.2em; }
+.rank8H {color: #890000; background-position: -45.5em -27.3em; }
+.rank9C {color: #000; background-position: -52em 0; }
+.rank9D {color: #890000; background-position: -52em -9.1em; }
+.rank9S {color: #000; background-position: -52em -18.2em; }
+.rank9H {color: #890000; background-position: -52em -27.3em; }
+.rank10C {color: #000; background-position: -58.5em 0; }
+.rank10D {color: #890000; background-position: -58.5em -9.1em; }
+.rank10S {color: #000; background-position: -58.5em -18.2em; }
+.rank10H {color: #890000; background-position: -58.5em -27.3em; }
+.rankJC {color: #000; background-position: -65em 0; }
+.rankJD {color: #890000; background-position: -65em -9.1em; }
+.rankJS {color: #000; background-position: -65em -18.2em; }
+.rankJH {color: #890000; background-position: -65em -27.3em; }
+.rankQC {color: #000; background-position: -71.5em 0; }
+.rankQD {color: #890000; background-position: -71.5em -9.1em; }
+.rankQS {color: #000; background-position: -71.5em -18.2em; }
+.rankQH {color: #890000; background-position: -71.5em -27.3em; }
+.rankKC {color: #000; background-position: -78em 0;  }
+.rankKD {color: #890000; background-position: -78em -9.1em; }
+.rankKS {color: #000; background-position: -78em -18.2em; }
+.rankKH {color: #890000; background-position: -78em -27.3em; }
